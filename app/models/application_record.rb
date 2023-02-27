@@ -1,4 +1,4 @@
 class ApplicationRecord < ActiveRecord::Base
-  def encode_token(payLoad)
-    JWT.encode(payLoad, 'secret')
+  def encode_token(payload)
+    JWT.encode(payload, 'secret')
 end
